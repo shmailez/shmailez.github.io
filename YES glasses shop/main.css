@@ -2,6 +2,10 @@
     margin: 0;
     font-family: 'Roboto', sans-serif;;
 }
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+}
 .hr{
     width: 100%;
     border: 1px solid #000;
@@ -72,24 +76,25 @@ main{
     font-size: 100px;
     margin-right: -1000px;
     margin-top: 20%;
-    z-index: 100;
+    z-index: 200;
     font-weight: 400;
 }
 .main-link{
     display: flex;
     align-items: center;
     margin-top: 200px;
-    cursor: pointer;
+    z-index: 100;
 }
 .main-link__text{
     text-decoration: none;
     color: #000;
     margin-right: 10px;
-    cursor: pointer;
+    z-index: 100;
 }
 .main-img{
     margin: 20px;
     margin-left: 20%;
+    z-index: 100;
 }
 .brands-liquid{
     display: flex;
@@ -127,6 +132,16 @@ main{
     background-image: url(img/motchel-pic.svg);
     background-repeat: no-repeat;
     background-position: center;
+    transition: 0.3s;
+}
+.mitchel-left:hover{
+    width: 45%;
+    height: 620px;
+    display: flex;
+    background-image: url(img/motchel-pic.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.1);
 }
 .mitchel-left__img{
     height: 100%;
@@ -171,7 +186,20 @@ main{
     align-items: flex-end;
     background-image: url(img/shoop-woman-pic.svg);
     background-position: center;
+    transition: 0.3s;
 }
+
+.shop-women:hover{
+    display: flex;
+    width: 50%;
+    height: 620px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(img/shoop-woman-pic.svg);
+    background-position: center;
+    transform: scale(1.1);
+}
+
 .shop-men{
     display: flex;
     width: 50%;
@@ -223,6 +251,15 @@ main{
     height: 620px;
     background-image: url(img/sight-right.svg);
     background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.sight-right:hover{
+    display: flex;
+    width: 50%;
+    height: 620px;
+    background-image: url(img/sight-right.svg);
+    background-repeat: no-repeat;
+    transform: scale(1.1);
 }
 .brands-headline{
     display: flex;
