@@ -87,6 +87,7 @@ main{
     margin-top: 200px;
     z-index: 100;
     cursor: pointer;
+    margin-left: 5%;
 }
 .main-link__text{
     text-decoration: none;
