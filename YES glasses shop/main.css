@@ -451,7 +451,12 @@ main{
         width: 240px;
         margin: 5px;
       }
-
+      .wrapper{
+        display: flex;
+        width: 980px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .nav-sun,.nav-optical, .nav-fit{
         display: none;} /*РАБОТАЕТ*/
@@ -492,6 +497,35 @@ main{
 
   
 @media screen and (max-width: 1000px) {
+    .footer-column__string{
+        margin-top: 10px;
+        width: 85px;
+    }
+
+    .info-text__content{
+        margin-bottom: 30px;
+        width: 300px;
+        font-size: 17px;
+    }
+    .footer-right__socialmedia{
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+    }
+    .footer-right__socialmedia-facebook{
+        background-image: url(img/facebook-icon.svg);
+        height: 30px;
+        width: 30px;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .wrapper{
+        display: flex;
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .ant-carousel-hider {
         overflow: hidden;
         width: 750px;
@@ -538,6 +572,13 @@ main{
 
  
    @media screen and (max-width: 800px) {
+
+    .wrapper{
+        display: flex;
+        width: 580px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .ant-carousel-hider {
         overflow: hidden;
         width: 640px;
@@ -614,10 +655,68 @@ main{
     .sight-right{
         display: none;
     }
+    .footer-hr{
+        display: none;
     }
-    
+    .footer-box{
+        display: flex;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .footer-right__headline{
+        display: none;
+    }
+    .footer-box{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .footer-right__socialmedia{
+        display: flex;
+        flex-direction: row;
+        width: 80px;
+        margin-left: 0;
+    }
+    .footer-right__socialmedia-instagram{
+        background-image: url(img/instagram-icon.svg);
+        height: 30px;
+        width: 30px;
+    }
+    .footer-right__socialmedia-facebook{
+        background-image: url(img/facebook-icon.svg);
+        height: 30px;
+        width: 30px;
+        margin-left: 15px;
+        margin-top: 0;
+    }
+    .info-image{
+        display: none;
+    }
+    .info-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .info-text__content{
+        margin-bottom: 30px;
+        width: 500px;
+        font-size: 21px;
+    }
+}
 
     @media screen and (max-width: 620px) {
+        .footer-column__string{
+            margin-top: 10px;
+            width: 50px;
+        }
+
+        .wrapper{
+            display: flex;
+            width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .ant-carousel-hider {
             overflow: hidden;
             width: 600px;
@@ -650,4 +749,4 @@ main{
             margin-right: auto;
             justify-content: center;
           } 
-    }
+        }
