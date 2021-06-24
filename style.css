@@ -1,7 +1,13 @@
 *{
     margin: 0;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
 .first-link {
     text-decoration: none;
     color: blue;
+    margin-top: 20px;
 }
