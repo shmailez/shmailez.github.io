@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+    margin-right: calc(-1 * (100vw - 100%));
+} 
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.nav img{
+    margin-right: 17%;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #214e41;
+    margin: 15px;
+}
+.nav ul li:last-child{
+    color: #f0a446;
+}
+.nav a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #214e41;
+    color: #ffffff;
+    text-decoration: none;
+    width: 130px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    margin: 7px;
+}
+.nav select{
+    border: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #214e41;
+    margin: 10px;
+}
+.language{
+    text-transform: uppercase;
+    appearance: none;
+}
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 1140px;
+}
+
+.bring,
+.radmin, 
+.gadmin, 
+.badmin {
+    width: 100%;
+    display: flex;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+/*
+.bring{
+    background-color: #43806c;
+}*/
+
+.header {
+    background-image: url(img/header-background.svg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+.header h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #214e41;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+.header input {
+    border: none;
+    width: 280px;
+    height: 60px;
+}
+
+.header button {
+    background-color: #43806c;
+    color: #ffffff;
+    border: none;
+    width: 130px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.container {
+    width: 50%;
+    padding-bottom: 0;
+}
+
+._left{
+    background-color: #e3eeed;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+._right{
+    background-color: #214e41;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+._right p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #ffffff;
+    width: 300px;
+}
+._left p{
+    text-transform: uppercase;
+    margin-top: -28px;
+    margin-left: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+}
+.bring ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36;
+    font-weight: 300;
+    color: #43806c;
+    padding-bottom: 20px;
+}
+.bring ul li:first-child{
+    font-weight: 700;
+    color: #214e41;
+}
+.radmin img {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: -4px;
+}
+.gadmin img{
+    width: 80%;
+}
+
+.admin {
+    background-image: url(img/admin-background.svg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-bottom: 100px;
+}
+
+.admin p, 
+.badmin p, 
+.gadmin p, 
+.radmin p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color:#43806c;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header h1, 
+.admin h2, 
+.badmin h2, 
+.gadmin h2, 
+.radmin h2 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #214e41;
+    width: 400px;
+}
+
+.admin h3, 
+.badmin h3, 
+.gadmin h3, 
+.radmin h3 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #757575;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.admin a, 
+.badmin a, 
+.gadmin a, 
+.radmin a {
+    display: flex;
+    text-decoration: none;
+    color: #43806c;
+    border-bottom: 1px solid #43806c;
+    padding-bottom: 10px;
+    width: 75px;
+}
+
+.part h2{
+    color: #f0a446;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.part p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    width: 270px;
+}
+.gallery{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.proudly{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.proudly h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #214e41;
+}
+.case{
+    margin: 20px;
+}
+.case p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    color: #43806c;
+}
+
+.case h3{
+    width: 355px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #214e41;
+}
+
+.talk {
+    display: flex;
+    background-color: #e3eeed;
+}
+
+.talk-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    padding-left: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.talk-wrapper h2 {
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #214e41;
+}
+
+.talk-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #214e41;
+    color: #ffffff;
+    border-radius: 10px;
+    width: 140px;
+    height: 40px;
+}
+
+.footer {
+    background-color: #214e41;
+    color: #ffffff;
+    width: 100%;
+}
+
+.footer-up {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-up ul li {
+    margin-bottom: 20px;
+}
+
+.footer-up ul li:first-child {
+    font-weight: 700;
+}
+
+.footer__right-column h4 {
+    font-weight: 300;
+}
+
+.footer__right-column input {
+    border: 1px solid #ffffff;
+    background-color: #214e41;
+    width: 300px;
+    height: 56px;
+}
+
+.footer__right-column button {/*
+    background-color: #ffffff;
+    color: #214e41;
+    border: none;
+    width: 75px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;*/
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+
+.footer__right-column h4,
+input, 
+p {
+    margin-bottom: 20px;
+}
+
+.socialmedia {
+    display: flex;
+}
+
+.socialmedia a {
+    margin-right: 20px;
+}
+
+.lincedin,
+.twitter,
+.youtube {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-size: cover;
+}
+
+.lincedin {
+    background-image: url(img/lincedin-icon.svg);
+}
+
+.twitter {
+    background-image: url(img/twitter-icon.svg);
+}
+
+.youtube {
+    background-image: url(img/youtube-icon.svg);
+}
+
+.footer-down {
+    border-top: 1px solid #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer-down p {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.subline {
+    display: flex;
+    justify-content: space-between;
+}
