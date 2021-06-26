@@ -15,11 +15,16 @@ li {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 .nav img{
-    margin-right: 17%;
+    margin-right:0;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
 }
 .nav ul{
     display: flex;
@@ -29,7 +34,8 @@ li {
     font-size: 13px;
     font-weight: 700;
     color: #214e41;
-    margin: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .nav ul li:last-child{
     color: #f0a446;
@@ -47,7 +53,7 @@ li {
     justify-content: center;
     align-items: center;
     border-radius: 7px;
-    margin: 7px;
+    margin: 10px;
 }
 .nav select{
     border: none;
@@ -74,7 +80,6 @@ li {
 .badmin {
     width: 100%;
     display: flex;
-    padding-top: 50px;
 }
 
 .bring{
@@ -96,12 +101,15 @@ li {
     color: #214e41;
     width: 500px;
     margin-bottom: 40px;
+    margin-left: 10%;
 }
 
 .header input {
     border: none;
     width: 280px;
     height: 60px;
+    margin-left: 10%;
+    margin-bottom: 200px;
 }
 
 .header button {
@@ -112,7 +120,36 @@ li {
     height: 60px;
     cursor: pointer;
 }
+.line{
+    height: 160px;
+    margin-top: -80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px 5px #cecece;
+}
 
+.line-box{
+    display: flex;
+    width: 30%;
+}
+.line-box img{
+    margin: 20px;
+}
+.line-box h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 5%;
+}
+.line-box p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin-right: 5%;
+}
 .container {
     width: 50%;
 }
@@ -130,17 +167,20 @@ li {
     font-weight: 200;
     color: #ffffff;
     width: 300px;
+    margin-left: 10%;
 }
-._left p{
+._left h4{
     text-transform: uppercase;
     margin-top: -28px;
-    
+    margin-bottom: 13px;
+    margin-left: 10%;
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
     font-weight: 200;
 }
 .bring ul{
     padding: 0;
+    margin-left: 10%;
 }
 .bring ul li{
     font-family: 'Roboto', sans-serif;
@@ -159,8 +199,20 @@ li {
     margin-bottom: -4px;
     width: 50%;
 }
+.left-radmin{
+    background-image: url(img/cellphone-pic.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: bottom;
+    background-size: 50%;
+}
+
 .gadmin img{
     width: 80%;
+    margin-top: 100px;
+}
+.badmin img{
+    margin-top: 100px;
 }
 
 .admin {
@@ -178,6 +230,8 @@ li {
     color:#43806c;
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: 100px;
+    margin-left: 10%;
 }
 
 .header h1, 
@@ -190,7 +244,8 @@ li {
     font-size: 36px;
     font-weight: 700;
     color: #214e41;
-    width: 400px;
+    width: 70%;
+    margin-left: 10%;
 }
 
 .admin h3, 
@@ -201,8 +256,9 @@ li {
     font-size: 18px;
     font-weight: 300;
     color: #757575;
-    width: 400px;
+    width: 70%;
     margin-bottom: 40px;
+    margin-left: 10%;
 }
 
 .admin a, 
@@ -215,8 +271,13 @@ li {
     border-bottom: 1px solid #43806c;
     padding-bottom: 10px;
     width: 75px;
+    margin-bottom: 100px;
+    margin-left: 10%;
 }
 
+.part{
+    width: 25%;
+}
 .part h2{
     color: #f0a446;
     font-family: 'Roboto', sans-serif;
@@ -229,16 +290,17 @@ li {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
     font-weight: 700;
-    width: 270px;
+    width: 90%;
 }
 .gallery{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .proudly{
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 50px;
 }
 .proudly h2{
@@ -274,11 +336,6 @@ li {
     display: flex;
     background-color: #e3eeed;
 }
-.talk img{
-    width: 50%;
-    
-}
-
 
 .talk-wrapper {
     display: flex;
@@ -287,6 +344,7 @@ li {
     padding-top: 150px;
     font-family: 'Roboto', sans-serif;
 }
+
 .talk-wrapper__left{
     background-image: url(img/lets-talk-pic.svg);
     background-position: center;
@@ -297,10 +355,12 @@ li {
 }
 
 .talk-wrapper h2 {
+    margin-left: 10%;
     margin-bottom: 60px;
     font-size: 36px;
     font-weight: 700;
     color: #214e41;
+    width: 70%;
 }
 
 .talk-wrapper a {
@@ -313,7 +373,8 @@ li {
     border-radius: 10px;
     width: 140px;
     height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-left: 10%;
 }
 
 .footer {
@@ -406,4 +467,28 @@ p {
 .subline {
     display: flex;
     justify-content: space-between;
+}
+
+/*carusielle*/
+
+.ant-carousel-list{
+    display: flex;
+    width: 100%;
+}
+.ant-carousel-element{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ant-carousel-hider{
+    overflow: hidden;
+    width: 100%;
+}
+.ant-carousel{
+    width: 100%;
+}
+.carousel{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 150px;
 }
