@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+}
+.section_first{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to top, rgb(18, 5, 134), rgb(80, 129, 234));
+    height: 280px;
+}
+.wrapper_logo,
+.wrapper_homo,
+.icon,
+.logo_text,
+.homo_first,
+.homo_second,
+.telephone,
+.iin,
+.iin_numb{
+    display: flex;
+    background-color: inherit;
+}
+.telephone, .iin{
+    opacity: 0.7;
+}
+.telephone{
+    margin-bottom: 20px;
+}
+.wrapper_logo{
+    width: 100%;
+    min-height: 50px;
+    justify-content: center;
+}
+.icon{
+    height: 60px;
+    width: 60px;
+    background-image: url("3.svg");
+    background-repeat: no-repeat;
+    background-color: inherit;
+    margin-top: 20px;
+}
+.logo_text{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: -10px;
+    color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.wrapper_homo{
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    width: 76%;
+    height: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.homo_second{
+    justify-content: space-between;   
+}
+.iin_numb{
+    font-weight: bold;
+}
+.section_second{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+
+    background-color: white;
+    margin-top: -90px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgb(12, 12, 12);
+}
+.exit, 
+.area,
+.wrapper_quadro,
+.box1,
+.box2,
+.box3,
+.box4,
+.numb,
+.state,
+.blue_second,
+.attention,
+.timer{
+    background-color: inherit;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.state, .attention{
+    opacity: 0.6;
+}
+.box1, .box2{
+    color: gray;
+}
+.exit{
+    margin-top: 16px;
+    color: rgb(13, 3, 104);
+}
+.area{
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 22px;
+    color: black;
+    font-weight: bold;
+}
+.state{
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    border-top: rgb(97, 97, 97) solid 1px;
+}
+.attention{
+    margin-top: 12px;
+    font-size: 14px;
+}
+.timer{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+}
+.wrapper_quadro{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 15px;
+    max-width: 250px;
+}
+.box1,
+.box2,
+.box3,
+.box4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 49%;
+}
+.box2, .box4{
+    border-left: rgb(97, 97, 97) solid 1px;
+}
+.blue_box{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    width: 96%;
+    height: 80px;
+    background-color: rgb(181, 236, 169);
+    border-radius: 10px;
+}
+.blue_first{
+    background-color: inherit;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-left: 92%;
+    color: rgb(255, 153, 0);
+}
+.blue_second{
+    margin-bottom: 2px;
+    font-size: 25px;
+    color: rgb(33, 85, 17);
+    font-weight: bold;
+}
+.watch{
+    height: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: black;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+.footer_first, .footer_second, .watch{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.footer_first{
+    opacity: 0.7;
+}
+.footer_second{
+    color: brown;
+    margin-top: 10px;
+}
+.input_one, .input_two, .input_three{
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    border-color: aqua;
+    outline: none;
+}
+.input_two, .input_three{
+    margin-top: 35px;
+}
+.button_one, .button_two, .button_three{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    padding: auto;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: blue;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    outline: none;
+}

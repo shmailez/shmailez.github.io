@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>guramoqia</title>
+    <meta name="theme-color" content="#5081ea">
+    
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="ios.js"></script>
+    <meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="application-name" content="giro">
+<meta name="apple-mobile-web-app-title" content="giro">
+<meta name="msapplication-starturl" content="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" type="image/png" sizes="192x192" href="apple-icon.png">
+<link rel="apple-touch-icon" type="image/png" sizes="192x192" href="apple-icon.png">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="favicon.ico">
+<link rel="icon" href="android-icon-192x192.png">
+<link rel="apple-touch-icon" href="android-icon-192x192.png">
+</head>
+<script src="script.js"></script>
+<script src="ios.js"></script>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js');
+    }
+</script>
+<body>
+<section class="section_first">
+    <wrapper class="wrapper_logo">
+              <div class="icon"></div>
+              <div class="logo_text">ASHYQ</div>
+    </wrapper>
+    <wrapper class="wrapper_homo">
+        <div class="homo_first">
+              <div class="telephone">Номер телефона</div>
+        </div>
+        <div class="homo_second">
+              <div class="iin">ИИН</div> 
+              <div class="iin_numb">90012534584</div>
+        </div>
+    </wrapper>
+</wrapper> 
+</section>    
+    
+
+<section class="section_second">
+    <div class="exit">Куда входите:</div>
+    <div id="line_first" class="area">Сюда Туда</div>
+    
+          <wrapper class="wrapper_quadro">
+                <div class="box1" class="iin">БИН/ИИН</div>
+                <div class="box2" class="iin">Номер входа</div>
+                <div id="line_second" class="box3" class="numb">040840003406</div>
+                <div id="line_three"class="box4" class="numb">2</div>
+          </wrapper>
+
+          <div class="state">Статус</div>
+
+          <div class="blue_box">
+                <p class="blue_first">ⓘ</p>
+                <p class="blue_second">Зеленый</p>
+          </div>
+
+          <div class="attention">Срок действия истечет через:</div>
+               
+          <span id="time" class="timer" >05:00</span>       
+</section>
+<script src="script.js"></script>
+<footer class="footer">
+    <div class="footer_first">Время сканирования кода</div>
+    <div class="watch" id="id_clock" ></div>
+    <script>digitalClock();</script>
+    <div class="footer_second">Покажите полученный результат соответствующему сотруднику объекта</div>
+    
+</footer>
+
+<script src="script.js"></script>
+<input class="input_one" id="input_first" type="text" name="enter_one">
+<input class="button_one" id="button_first" type="button" value="сменить место"><br><br>
+<script src="script.js"></script>
+<input class="input_two" id="input_second" type="text" name="enter_two">
+<input class="button_two" id="button_second" type="button" value="сменить бин/иин"><br><br>
+<script src="script.js"></script>
+
+<input class="input_three" id="input_three" type="text" name="enter_three">
+<input class="button_three" id="button_three" type="button" value="сменить вход"><br><br>
+<script src="script.js"></script>
+
+
+<script src="ios.js"></script>
+<h1>hi</h1>
+</body>
+<script src="ios.js"></script>
+</html>
