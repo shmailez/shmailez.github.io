@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    background-color: aquamarine;
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px;
+}
+
+.clear{
+    margin: 20px;
+}
+
+.form{
+    width: 300px;
+    height: 100px;
+    background-color: #878787;
+    color: azure;
+    margin: 20px;
+}
+
+.wrapper{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    flex-wrap: wrap;
+}
