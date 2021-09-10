@@ -64,13 +64,50 @@ li{
     background-color: #878787;
     color: azure;
     margin: 20px;
+    overflow: hidden;
 }
 
 .wrapper{
     display: flex;
-    height: 300px;
+    height: 400px;
     width: 350px;
     flex-wrap: wrap;
 }
 
 
+#comments{
+    justify-content: center;
+    margin: auto;
+    display: flex; 
+    flex-wrap:wrap; 
+    max-width: 90%;
+}
+
+#user_inf{
+    background-color: rgb(113, 20, 220);
+    color: aliceblue;
+}
+
+.tex{
+    text-align: center;
+    background-color: darkgreen;
+}
+
+.com{
+    background-color: #eebd1c; 
+    width: 200px; 
+    height: 150px;
+     margin:10px;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid #eebd1c;
+    border-radius: 10%;
+}
+
+.com:nth-child(even){
+    background-color: #19cab3; 
+    width: 200px; 
+    height: 150px;
+     margin:10px;
+     border: 1px solid #19cab3;
+}
