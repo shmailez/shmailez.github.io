@@ -611,11 +611,11 @@ span.icon-male{
 }
 .nbs-flexisel-nav-left {
 	left: -30px;
-	background: url(/web/20160326182404im_/http://coastaltradingandpawnportlandme.com/images/arrows.png) -5px -6px no-repeat;
+	background: url(images/arrows.png) -5px -6px no-repeat;
 }
 .nbs-flexisel-nav-right {
   	right:-26px;
- 	background: url(/web/20160326182404im_/http://coastaltradingandpawnportlandme.com/images/arrows.png) -70px -6px no-repeat;
+ 	background: url(images/arrows.png) -70px -6px no-repeat;
 }
 .desc h3{
 	font-size: 1.3em;
