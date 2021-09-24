@@ -4,6 +4,10 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
+
+
+/* .fa-angle-left:before{content:"../images/arr1.svg"} */
+
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
@@ -589,7 +593,7 @@ span.icon-male{
 .nbs-flexisel-item img {
 	  width: 100%;
 	  cursor: pointer;
-	  positon: relative;
+	  position: relative;
 	  max-width: 125px;
 	  max-height:125px;
 	  margin-top:25px;
@@ -743,7 +747,7 @@ ul#general-info{
 	font-size: 0.85em;
 }
 .search input[type="submit"] {
-	/* background: url('/web/20160326182404im_/http://coastaltradingandpawnportlandme.com/images/email.png') no-repeat 0px 0px; */
+	background: url('images/email.png') no-repeat 0px 0px;
 	border: none;
 	cursor: pointer;
 	position: absolute;
@@ -1615,7 +1619,7 @@ ul.person h4, .product_container p{
 }
 .nbs-flexisel-nav-right {
 	right: -17px;
-	background-image: url(../images/arr1.svg);
+	
 }
 .welcome_desc h3, .middle_right h3 {
 	margin-bottom:0.5em;
