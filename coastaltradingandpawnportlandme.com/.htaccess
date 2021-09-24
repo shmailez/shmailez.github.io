@@ -1,0 +1,22 @@
+<FilesMatch "^[^\.]+$">
+    ForceType text/html
+</FilesMatch>
+
+<FilesMatch ".(eot|ttf|otf|woff)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING} ^(.+)$
+RewriteRule ^(.*)$ $1%1? [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ / [R=301]
+RewriteBase /
+
+
+AddType text/html html php php2 php3 php4 php5 php7 phtml phtm
+AddType text/html asp aspx
+AddType text/css .css .cssver
