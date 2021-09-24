@@ -5,8 +5,9 @@ License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 */
 
-
-/* .fa-angle-left:before{content:"../images/arr1.svg"} */
+i {
+font-family: fontawesome !important;
+}
 
 h4, h5, h6,
 h1, h2, h3 {margin-top: 0;}
