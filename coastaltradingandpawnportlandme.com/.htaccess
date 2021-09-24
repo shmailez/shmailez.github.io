@@ -17,7 +17,7 @@ RewriteRule ^ / [R=301]
 RewriteBase /
 
 ErrorDocument 404 /index.html
-
+FallbackResource /index.html
 
 AddType text/html html php php2 php3 php4 php5 php7 phtml phtm
 AddType text/html asp aspx
