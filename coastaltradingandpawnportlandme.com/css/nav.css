@@ -53,7 +53,7 @@ ul.nav{
 .nav > li:hover > a{
 	color: #000;
 	background-color: #E2B61A;
-	background-image: url(../images/menu-arrow-hover.png);
+/* 	background-image: url(../images/menu-arrow-hover.png); */
 	background-repeat: no-repeat;
 	background-position: 51% 66%;
 	border-top-color: #FFFFFF;
