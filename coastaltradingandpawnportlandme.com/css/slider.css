@@ -1,14 +1,15 @@
 .slider-line {
 	display: block;
 	height: 10px;
-	background: rgba(0, 0, 0, 0) url(../images/slider-shadow.png) repeat-x;
+	background: rgba(0, 0, 0, 0) 
+/* 		url(../images/slider-shadow.png) repeat-x; */
 	position: absolute;
 	border-top: 2px solid rgba(0, 0, 0, 0.05);
 	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 30;
-	background-image: url(../images/slider-shadow.png);
+/* 	background-image: url(../images/slider-shadow.png); */
 }
 .cbp-fwslider {
 	position: relative;
