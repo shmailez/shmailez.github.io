@@ -35,6 +35,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: http://cv06625.tmweb.ru/prod.html');
+    header('location: https://shmailez.github.io/TEST%20Sales%20Generator/');
 }
 ?>
