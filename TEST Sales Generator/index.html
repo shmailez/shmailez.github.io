@@ -9,7 +9,44 @@
 </head>
 <body>
     <main>
-        <button>кликни</button>
+        <button class="big-button" onclick="myFunction()">кликни</button>
+        <script>
+            function myFunction() {
+               var element = document.getElementById("popup");
+               element.classList.remove("invis");
+            }
+            </script>
+    <div id="popup" class="popup invis">
+        <h1 class="header">Получите набор файлов для руководителя</h1>
+        <div class="side left">
+            <img src="./icom.png" alt="icons">
+            <img src="./file.png" alt="files">
+        </div>
+        <div class="side right">
+            <form action="mail.php" method="post">
+                <button class="delete" onclick="del()">X</button>
+                <label for="email">Введите Email для получения файлов</label>
+                <input class="email" type="email" id="" name="user_email" placeholder="E-mail" required>
+                <label for="tel">Введите телефон для подтверждения доступа</label>
+                <input class="phone" type="tel" id="" name="user_phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="7-000-000-00-00" required>
+              <!--  <input class="form-button sender" type="submit" value="Скачать файл"> -->
+              <button type="submit" class="form-button sender btn btn-primary">Скачать файл</button>
+            </form>
+        </div>
+        <script>
+            function del() {
+               var element = document.getElementById("popup");
+               element.classList.add("invis");
+            }
+            </script>
+      
+                  
+
+
+        
+    </div>
+
+    
     </main>
 </body>
 </html>
