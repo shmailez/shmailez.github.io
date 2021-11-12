@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+}
+
+p{
+    width: 699px;
+}
+
+h1{
+    position: relative;
+}
+
+h1 a{
+    margin-left: 20px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+a{
+    position: relative;
+}
+
+.chat-link{
+    background-color: #36ba5f;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.chat-link::before{
+    position: absolute;
+    content: url(img/icon-chat.svg);
+    top: 10px;
+    left: 10px;
+}
+
+a[href^="tel:"]{
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+a[href^="tel:"]:before {
+    content: url(img/icon-phone.svg);
+}
+
+a[href^="mailto:"]{
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+a[href^="mailto:"]:before {
+    content: url(img/icon-mail.svg);
+}
