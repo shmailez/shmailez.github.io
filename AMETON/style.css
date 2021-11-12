@@ -6,9 +6,8 @@
     font-family: "Museo Sans";
     src: url("fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"),
     url("fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff"),
-    url("fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"),
     url("fonts/MuseoSans/MuseoSansCyrl-900.woff") format("woff")
-           
+
    }
 
 
@@ -22,14 +21,15 @@ h1{
     font-family: 'Museo Sans', Courier, monospace;
     color: #ffffff;
     margin-top: 40px;
-    font-weight: bolder;
+    font-weight: 900;
     font-size: 60pt;
-    z-index: 10;
 }
 
 h3, h4{
     text-align: center;
     font-family: 'Museo Sans', Courier, monospace;
+    font-size: 40pt;
+    font-weight: 900;
 }
 
 header{
@@ -46,14 +46,14 @@ header{
 }
 
 header::after{
-    content: url(img/handwithphone.png);
+    content: url(/img/handwithphone.png);
     position: absolute;
     bottom: -10px;
     right: 0;
 }
 
 header::before{
-    content: url(img/paperjets.png);
+    content: url(/img/paperjets.png);
     position: absolute;
     bottom: 50px;
     left: 0;
@@ -68,14 +68,23 @@ header p{
     font-weight:300;
     font-size: 17pt;
     width: 100%;
-    max-width: 550px;
-    z-index: 10;
+    max-width: 600px;
+}
+
+.header__title{
+    display: flex;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 20;
 }
 
 nav{
     display: flex;
     
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 nav ul{
@@ -108,25 +117,25 @@ nav ul li{
 
 nav ul li:nth-child(1)::before{
     position: absolute;
-    content: url(img/icon-nav-one.svg);
+    content: url(/img/icon-nav-one.svg);
     left: 22px;
 }
 
 nav ul li:nth-child(2)::before{
     position: absolute;
-    content: url(img/ant-design_phone-filled.svg);
+    content: url(/img/ant-design_phone-filled.svg);
     left: 25px;
 }
 
 nav ul li:nth-child(3)::before{
     position: absolute;
-    content: url(img/icon-nav-three.svg);
+    content: url(/img/icon-nav-three.svg);
     left: 40px;
 }
 
 nav ul li:nth-child(4)::before{
     position: absolute;
-    content: url(img/icon-nav-four.svg);
+    content: url(/img/icon-nav-four.svg);
     left: 12px;
 }
 
@@ -182,28 +191,28 @@ main .social-media ul li{
 
 main .social-media ul li:nth-child(1)::before{
     position: absolute;
-    content: url(img/icon-vk.svg);
+    content: url(/img/icon-vk.svg);
 }
 
 main .social-media ul li:nth-child(2)::before{
     position: absolute;
-    content: url(img/icon-instagram.svg);
+    content: url(/img/icon-instagram.svg);
 }
 main .social-media ul li:nth-child(3)::before{
     position: absolute;
-    content: url(img/icon-tiktok.svg);
+    content: url(/img/icon-tiktok.svg);
 }
 main .social-media ul li:nth-child(4)::before{
     position: absolute;
-    content: url(img/icon-twitter.svg);
+    content: url(/img/icon-twitter.svg);
 }
 main .social-media ul li:nth-child(5)::before{
     position: absolute;
-    content: url(img/icon-yandexdzen.svg);
+    content: url(/img/icon-yandexdzen.svg);
 }
 main .social-media ul li:nth-child(6)::before{
     position: absolute;
-    content: url(img/icon-facebook.svg);
+    content: url(/img/icon-facebook.svg);
 }
 
 /*CARUSIELLE*/
@@ -263,25 +272,33 @@ main .social-media ul li:nth-child(6)::before{
 
 @media screen and (max-width:620px){
     .social-media{
-        /* display: flex;
-        box-shadow: 0px 0px 10px 5px #cacaca;
-        max-width: 996px;
-        width: 100%;
-        height: 120px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 30px;
-        align-items: center; */
         flex-direction: column;
     }
 
     main .social-media ul{
+        display: flex;
+        flex-wrap: wrap;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
         padding: 0;
     }
 
     .social-media__title{
         text-align: center;
+    }
+
+    header::after{
+        visibility: hidden;
+    }
+    
+    header::before{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:620px){
+    h1{
+        font-size: 15vw;
     }
 }
