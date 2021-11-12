@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: "Museo Sans";
-    src: url("/fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"),
-    url("/fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff"),
-    url("/fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"),
-    url("/fonts/MuseoSans/MuseoSansCyrl-900.woff") format("woff")
+    src: url("fonts/MuseoSans/MuseoSansCyrl-300.woff") format("woff"),
+    url("fonts/MuseoSans/MuseoSansCyrl-500.woff") format("woff"),
+    url("fonts/MuseoSans/MuseoSansCyrl-700.woff") format("woff"),
+    url("fonts/MuseoSans/MuseoSansCyrl-900.woff") format("woff")
            
    }
 
@@ -46,14 +46,14 @@ header{
 }
 
 header::after{
-    content: url(/img/handwithphone.png);
+    content: url(img/handwithphone.png);
     position: absolute;
     bottom: -10px;
     right: 0;
 }
 
 header::before{
-    content: url(/img/paperjets.png);
+    content: url(img/paperjets.png);
     position: absolute;
     bottom: 50px;
     left: 0;
