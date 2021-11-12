@@ -108,25 +108,25 @@ nav ul li{
 
 nav ul li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/icon-nav-one.svg);
+    content: url(img/icon-nav-one.svg);
     left: 22px;
 }
 
 nav ul li:nth-child(2)::before{
     position: absolute;
-    content: url(/img/ant-design_phone-filled.svg);
+    content: url(img/ant-design_phone-filled.svg);
     left: 25px;
 }
 
 nav ul li:nth-child(3)::before{
     position: absolute;
-    content: url(/img/icon-nav-three.svg);
+    content: url(img/icon-nav-three.svg);
     left: 40px;
 }
 
 nav ul li:nth-child(4)::before{
     position: absolute;
-    content: url(/img/icon-nav-four.svg);
+    content: url(img/icon-nav-four.svg);
     left: 12px;
 }
 
@@ -182,28 +182,28 @@ main .social-media ul li{
 
 main .social-media ul li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/icon-vk.svg);
+    content: url(img/icon-vk.svg);
 }
 
 main .social-media ul li:nth-child(2)::before{
     position: absolute;
-    content: url(/img/icon-instagram.svg);
+    content: url(img/icon-instagram.svg);
 }
 main .social-media ul li:nth-child(3)::before{
     position: absolute;
-    content: url(/img/icon-tiktok.svg);
+    content: url(img/icon-tiktok.svg);
 }
 main .social-media ul li:nth-child(4)::before{
     position: absolute;
-    content: url(/img/icon-twitter.svg);
+    content: url(img/icon-twitter.svg);
 }
 main .social-media ul li:nth-child(5)::before{
     position: absolute;
-    content: url(/img/icon-yandexdzen.svg);
+    content: url(img/icon-yandexdzen.svg);
 }
 main .social-media ul li:nth-child(6)::before{
     position: absolute;
-    content: url(/img/icon-facebook.svg);
+    content: url(img/icon-facebook.svg);
 }
 
 /*CARUSIELLE*/
