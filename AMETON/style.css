@@ -141,31 +141,6 @@ nav ul li{
     top: 2px;
 }
 
-/* 
-nav ul li:nth-child(1)::before{
-    position: absolute;
-    content: url(img/icon-nav-one.svg);
-    left: 18px;
-}
-
-nav ul li:nth-child(2)::before{
-    position: absolute;
-    content: url(img/ant-design_phone-filled.svg);
-    left: 21px;
-}
-
-nav ul li:nth-child(3)::before{
-    position: absolute;
-    content: url(img/icon-nav-three.svg);
-    left: 40px;
-}
-
-nav ul li:nth-child(4)::before{
-    position: absolute;
-    content: url(img/icon-nav-four.svg);
-    left: 7px;
-} */
-
 main .social-media ul{
     display: flex;
     margin-left: auto;
@@ -273,7 +248,6 @@ main .social-media ul li:nth-child(6)::before{
 .carousel-element{
     display: flex;
     margin: 9px;
-    height: 160px;
     width: 282px;
     max-width: 282px;
     min-width: 282px;
