@@ -517,6 +517,11 @@ h6{
     .carousel-hider {
         width: 420px;
     }
+
+    .reference li p{
+        max-width: 370px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:480px){
@@ -535,6 +540,11 @@ h6{
     .carousel-hider {
         width: 320px;
     }
+
+    .reference li p{
+        max-width: 300px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:350px){
@@ -552,5 +562,10 @@ h6{
     
     .carousel-hider {
         width: 280px;
+    }
+
+    .reference li p{
+        max-width: 260px;
+        width: 100%;
     }
 }
