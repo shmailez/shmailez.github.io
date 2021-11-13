@@ -5,16 +5,16 @@ function Ant(crslId) {
 		this.crslRoot = id
 	}
 	else {
-		this.crslRoot = document.querySelector('.ant-carousel')
+		this.crslRoot = document.querySelector('.carousel')
 	};
 
 	// Carousel objects
-	this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
-	this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
-	this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
-	this.leftArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-left');
-	this.rightArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-right');
-	this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
+	this.crslList = this.crslRoot.querySelector('.carousel-list');
+	this.crslElements = this.crslList.querySelectorAll('.carousel-element');
+	this.crslElemFirst = this.crslList.querySelector('.carousel-element');
+	this.leftArrow = this.crslRoot.querySelector('div.carousel-arrow-left');
+	this.rightArrow = this.crslRoot.querySelector('div.carousel-arrow-right');
+	this.indicatorDots = this.crslRoot.querySelector('div.carousel-dots');
 
 	// Initialization
 	this.options = Ant.defaults;
@@ -24,7 +24,7 @@ function Ant(crslId) {
 Ant.defaults = {
 
 	// Default options for the carousel
-	elemVisible: 3, // Кол-во отображаемых элементов в карусели
+	elemVisible: 4, // Кол-во отображаемых элементов в карусели
 	loop: true,     // Бесконечное зацикливание карусели 
 	auto: true,     // Автоматическая прокрутка
 	interval: 3000, // Интервал между прокруткой элементов (мс)
