@@ -217,16 +217,97 @@ main .social-media ul li:nth-child(6)::before{
 
 /*CARUSIELLE*/
 
+.wrapper{
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+} 
+   
+
+.ant-carousel {
+    width: 1200px;
+    padding-top: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.ant-carousel-hider {
+    overflow: hidden;
+    width: 1200px;
+}
+
 .ant-carousel-list{
     display: flex;
 }
 
 .ant-carousel-element{
-    margin: 5px;
-    width: 250px;
+    display: flex;
+    margin: 9px;
+    width: 282px;
+    max-width: 282px;
+    min-width: 282px;
     box-shadow: 0px 0px 10px 5px #cacaca;
+    border-radius: 10px;
 }
 
+.ant-carousel-element p{
+    font-family: 'Museo Sans', Courier, monospace;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.ant-carousel-element p:nth-child(2){
+    font-family: 'Museo Sans', Courier, monospace;
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #949494;
+}
+
+.ant-carousel-element img{
+    margin-left: auto;
+    width: 104px;
+}
+
+  /* Navigation item styles
+  div.ant-carousel-arrow-left,
+  div.ant-carousel-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 32;
+  }
+  
+  div.ant-carousel-arrow-left {
+    left: -40px;
+    top: 40%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+  }
+  
+  div.ant-carousel-arrow-right {
+    
+    display: block;
+    background: url("/img/paperjets.png") no-repeat;
+  }
+  
+  div.ant-carousel-arrow-left:hover {
+    opacity: 1.0;
+  }
+  
+  div.ant-carousel-arrow-right:hover {
+    opacity: 1.0;
+  } */
+
+/**/
 
 .reference{
     /* display: flex;
@@ -273,6 +354,12 @@ main .social-media ul li:nth-child(6)::before{
 @media screen and (max-width:620px){
     .social-media{
         flex-direction: column;
+        height: 100%;
+        padding-bottom: 25px;
+    }
+
+    .social-media p{
+        margin-top: 25px;
     }
 
     main .social-media ul{
@@ -295,10 +382,162 @@ main .social-media ul li:nth-child(6)::before{
     header::before{
         visibility: hidden;
     }
-}
 
-@media screen and (max-width:620px){
     h1{
         font-size: 15vw;
     }
 }
+
+/*carusiele adaptive*/
+
+@media screen and (max-width:1220px){
+    .ant-carousel-element{
+        max-width: 346px;
+        min-width: 346px;
+    }
+    .wrapper{
+        width: 1090px;
+    } 
+       
+    .ant-carousel {
+        width: 1090px;
+    }
+    
+    .ant-carousel-hider {
+        width: 1090px;
+    }
+}
+
+@media screen and (max-width:1100px){
+    .ant-carousel-element{
+        max-width: 305px;
+        min-width: 305px;
+    }
+    .wrapper{
+        width: 970px;
+    } 
+       
+    
+    .ant-carousel {
+        width: 970px;
+    }
+    
+    .ant-carousel-hider {
+        width: 970px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .ant-carousel-element{
+        max-width: 385px;
+        min-width: 385px;
+    }
+    .wrapper{
+        width: 800px;
+    } 
+       
+    .ant-carousel {
+        width: 800px;
+    }
+    
+    .ant-carousel-hider {
+        width: 800px;
+    }
+}
+
+@media screen and (max-width:820px){
+    .ant-carousel-element{
+        max-width: 310px;
+        min-width: 310px;
+    }
+    .wrapper{
+        width: 650px;
+    } 
+       
+    .ant-carousel {
+        width: 650px;
+    }
+    
+    .ant-carousel-hider {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width:685px){
+    .ant-carousel-element{
+        max-width: 258px;
+        min-width: 258px;
+    }
+    .wrapper{
+        width: 550px;
+    } 
+       
+    .ant-carousel {
+        width: 550px;
+    }
+    
+    .ant-carousel-hider {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:590px){
+    .ant-carousel-element{
+        max-width: 405px;
+        min-width: 405px;
+    }
+    .wrapper{
+        width: 420px;
+    } 
+       
+    .ant-carousel {
+        width: 420px;
+    }
+    
+    .ant-carousel-hider {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .ant-carousel-element{
+        max-width: 302px;
+        min-width: 302px;
+    }
+    .wrapper{
+        width: 320px;
+    } 
+       
+    .ant-carousel {
+        width: 320px;
+    }
+    
+    .ant-carousel-hider {
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .ant-carousel-element{
+        max-width: 260px;
+        min-width: 260px;
+    }
+    .wrapper{
+        width: 280px;
+    } 
+       
+    .ant-carousel {
+        width: 280px;
+    }
+    
+    .ant-carousel-hider {
+        width: 280px;
+    }
+}
+/**/
+
+
+
+
+
+
