@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    padding-right: 80px;
+}
+
 p{
     max-width: 694px;
     width: 100%;
@@ -11,7 +15,6 @@ p{
     font-weight: 400;
     margin-left: 40px;
     letter-spacing: -0.7px;
-    white-space: 1px;
     line-height: 21px;
 }
 
@@ -46,8 +49,11 @@ h6{
 }
 
 .button-line{
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 32px;
     margin-left: 40px;
+    margin-bottom: 40px;
 }
 
 .chat-link{
@@ -56,7 +62,7 @@ h6{
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #ffffff;
-    padding: 14px;
+    padding-top: 14px;
     padding-left: 56px;
     padding-right: 47px;
     border-radius: 10px;
@@ -74,7 +80,7 @@ span::before{
 }
 
 a[href^="tel:"]{
-    background-color: #f9f9f9;
+    background-color: #a51c1c;
     text-align: center;
     padding: 14px;
     border-radius: 10px;
@@ -99,21 +105,32 @@ a[href^="mailto:"]:before {
 
 @media screen and (max-width:620px){
     span{
-        visibility: hidden;
+        display: none;
     }
 
     .chat-link{
-        text-align: center;
-    padding: 14px;
-    border-radius: 10px;
-    margin-left: 10px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 14px;
     }
 
     .chat-link::before{
         position: relative;
         content: url(img/icon-chat.svg);
         top: 3px;
-    /* margin-right: 5px;
-    top: 3px; */
+    }
+    a[href^="tel:"]{
+        background-color: #f9f9f9;;
+        text-align: center;
+        padding-bottom: 0;
+        border-radius: 10px;
+        margin-left: 8px;
+    }
+    a[href^="mailto:"]{
+        background-color: #f9f9f9;
+        text-align: center;
+        padding-bottom: 0;
+        border-radius: 10px;
+        margin-left: 8px;
     }
 }
