@@ -80,7 +80,7 @@ span::before{
 }
 
 a[href^="tel:"]{
-    background-color: #a51c1c;
+    background-color: #f9f9f9;
     text-align: center;
     padding: 14px;
     border-radius: 10px;
