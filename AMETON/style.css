@@ -7,32 +7,20 @@ ul{
     padding: 0;
 }
 
-/* h1{
-    text-align: center;
-    font-family: 'Museo Sans Cyrl 900';
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    /* color: #ffffff;
-    margin-top: 38px;
-    font-weight: 900;
-    font-size: 58px;
-    letter-spacing: -4.4px; */
-/* } */ 
-
 h1{
     text-align: center;
     font-family: 'Museo Sans Cyrl 900';
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     color: #ffffff;
     margin-top: 40px;
     font-weight: 900;
     font-size: 60px;
-    /* letter-spacing: -4.4px; */
 }
 
 h2{
     font-family: 'Museo Sans Cyrl 700';
     font-weight: 700;
     font-size: 40px;
+    color: #1a1a1a;
 }
 
 h3{
@@ -42,6 +30,7 @@ h3{
     font-size: 40px;
     margin-top: 84px;
     margin-bottom: 20px;
+    color: #1a1a1a;
 }
 
 h4{
@@ -52,6 +41,7 @@ h4{
     margin-top: 62px;
     margin-bottom: 20px;
     margin-left: -8px;
+    color: #1a1a1a;
 }
 
 header{
@@ -77,23 +67,9 @@ header::after{
 header::before{
     content: url(img/paperjets.png);
     position: absolute;
-    bottom: 70px;
+    bottom: 67px;
     left: 0;
 }
-
-/* header p{
-    text-align: center;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:300;
-    font-size: 17px;
-    letter-spacing: -0.8px;
-    width: 100%;
-    max-width: 500px;
-} */
 
 header p{
     text-align: center;
@@ -106,14 +82,8 @@ header p{
     font-weight:300;
     font-size: 17px;
     letter-spacing: -0.2px;
-    
-    /* letter-spacing: -0.8px; */
     width: 100%;
     max-width: 500px;
-}
-
-header p:first-child{
-    color: red;
 }
 
 .header__title{
@@ -145,9 +115,9 @@ nav ul{
 nav ul li{
     font-family: 'Museo Sans Cyrl 700';
     font-size: 15px;
-    /* letter-spacing: -0.8px; */
     font-weight: 700;
     position: relative;
+    color: #1a1a1a;
     background-color: #ffffff;
     padding: 5px;
     border-radius: 15px;
@@ -158,21 +128,20 @@ nav ul li{
     margin-left: 4px;
     margin-right: 4px;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .span-one::before{
     position: relative;
     content: url(img/icon-nav-one.svg);
-    margin-right: 11px;
+    margin-right: 8px;
+    top: 2px;
 }
 
 .span-two::before{
     position: relative;
     content: url(img/ant-design_phone-filled.svg);
     margin-right: 10px;
-    top: 2px;
+    top: 3px;
 }
 
 .span-three::before{
@@ -217,7 +186,7 @@ main .social-media ul{
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 14px;
-    /* letter-spacing: -0.1px; */
+    color: #1a1a1a;
 }
 
 main .social-media ul{
@@ -300,7 +269,6 @@ main .social-media ul li:nth-child(6)::before{
 .carousel-element{
     display: flex;
     margin: 9px;
-
     width: 282px;
     max-width: 282px;
     min-width: 282px;
@@ -309,28 +277,26 @@ main .social-media ul li:nth-child(6)::before{
 }
 
 h6{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Museo Sans Cyrl 700';
     font-weight: 700;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 8px;
-    margin-bottom: 3px;
-    letter-spacing: -3px;
+    margin-bottom: 10px;
+    color: #1a1a1a;
 }
 
 .carousel-element p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    /* margin-top: 10px; */
+    font-family: 'Museo Sans Cyrl 500';
+    font-weight: 500;
+    font-size: 15px;
     margin-left: 10px;
-    letter-spacing: -1.1px;
+    color: #1a1a1a;
 }
 
 .carousel-element p:nth-child(2){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
-    /* margin-top: 10px; */
     margin-left: 10px;
     color: #949494;
 }
@@ -354,20 +320,21 @@ h6{
 .reference li p{
     padding: 0;
     margin: 0;
-    margin-bottom: 3px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 12px;
+    margin-bottom: 6px;
+    font-family: 'Museo Sans Cyrl 300';
+    font-size: 13px;
     color: #949494;
     font-weight: 200;
-    max-width: 450px;
+    max-width: 400px;
     width: 100%;
+    /* line-height: 18px; */
 }
 
 .reference li h6{
     padding: 0;
     margin: 0;
-    margin-bottom: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 2px;
+    font-family: 'Museo Sans Cyrl 700';
     font-size: 20px;
     color: #1a1a1a;
     font-weight: 700;
@@ -383,7 +350,7 @@ h6{
     padding-right: 10px;
     padding-top: 23px;
     padding-bottom: 18px;
-    padding-left: 24px;
+    padding-left: 26px;
     border-radius: 20px;
 }
 
