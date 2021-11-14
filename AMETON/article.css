@@ -7,14 +7,9 @@ body{
     padding-right: 80px;
 }
 
-p{
-    max-width: 690px;
-    width: 100%;
-    font-family: 'Museo Sans Cyrl 500';
-    font-size: 15px;
-    font-weight: 200;
-    margin-left: 40px;
-    line-height: 1.4;
+.header{
+    display: flex;
+    align-items: center;
 }
 
 .header a{
@@ -30,6 +25,7 @@ h5{
     margin-left: 40px;
     margin-bottom: 18px;
 }
+
 h6{
     /* margin-bottom: 40px; */
     font-family: 'Museo Sans Cyrl 700';
@@ -39,9 +35,14 @@ h6{
     margin-top: 38px;
 }
 
-.header{
-    display: flex;
-    align-items: center;
+p{
+    max-width: 690px;
+    width: 100%;
+    font-family: 'Museo Sans Cyrl 500';
+    font-size: 15px;
+    font-weight: 200;
+    margin-left: 40px;
+    line-height: 1.4;
 }
 
 .button-line{
