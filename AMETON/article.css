@@ -8,35 +8,31 @@ body{
 }
 
 p{
-    max-width: 694px;
+    max-width: 690px;
     width: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Museo Sans Cyrl 500';
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 200;
     margin-left: 40px;
-    letter-spacing: -0.7px;
-    line-height: 21px;
+    line-height: 1.4;
 }
 
 .header a{
-    margin-left: 21px;
+    margin-left: 13px;
     margin-top: 6px;
 }
 
 h5{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Museo Sans Cyrl 900';
     font-size: 24px;
     font-weight: 900;
-    margin-top: 20px;
+    margin-top: 22px;
     margin-left: 40px;
     margin-bottom: 18px;
-    font-stretch:extra-condensed;
-    letter-spacing: -2.4px;
 }
-
 h6{
     /* margin-bottom: 40px; */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Museo Sans Cyrl 700';
     font-size: 13px;
     font-weight: 700;
     margin-left: 40px;
@@ -51,7 +47,7 @@ h6{
 .button-line{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 18px;
     margin-left: 40px;
     margin-bottom: 40px;
 }
@@ -60,11 +56,13 @@ h6{
     background-color: #36ba5f;
     position: relative;
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Museo Sans Cyrl 700';
+    font-size: 15px;
+    font-weight: 700;
     color: #ffffff;
-    padding-top: 14px;
+    padding-top: 13px;
     padding-left: 56px;
-    padding-right: 47px;
+    padding-right: 57px;
     border-radius: 10px;
 }
 
@@ -84,7 +82,7 @@ a[href^="tel:"]{
     text-align: center;
     padding: 14px;
     border-radius: 10px;
-    margin-left: 8px;
+    margin-left: 11px;
 }
 
 a[href^="tel:"]:before {
@@ -96,7 +94,7 @@ a[href^="mailto:"]{
     text-align: center;
     padding: 14px;
     border-radius: 10px;
-    margin-left: 8px;
+    margin-left: 11px;
 }
 
 a[href^="mailto:"]:before {
