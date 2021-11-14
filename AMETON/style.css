@@ -38,7 +38,7 @@ h4{
     font-family: 'Museo Sans Cyrl 700';
     font-weight: 700;
     font-size: 40px;
-    margin-top: 62px;
+    margin-top: 66px;
     margin-bottom: 20px;
     margin-left: -8px;
     color: #1a1a1a;
@@ -303,6 +303,8 @@ h6{
 
 .carousel-element img{
     margin-left: auto;
+    margin-top: -10px;
+    margin-right: 10px;
     width: 104px;
 }
 
