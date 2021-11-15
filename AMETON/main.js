@@ -190,12 +190,12 @@ Ant.initialize = function(that) {
 				bgTime = fnTime; that.elemPrev()
 			}
 		}, false);
-		that.rightArrow.addEventListener('click', function() {
-			let fnTime = getTime();
-			if(fnTime - bgTime > that.options.speed) {
-				bgTime = fnTime; that.elemNext()
-			}
-		}, false)
+		// that.rightArrow.addEventListener('click', function() {
+		// 	let fnTime = getTime();
+		// 	if(fnTime - bgTime > that.options.speed) {
+		// 		bgTime = fnTime; that.elemNext()
+		// 	}
+		// }, false)
 	}
 	else {
 		that.leftArrow.style.display = 'none';
