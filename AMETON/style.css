@@ -378,7 +378,7 @@ div.carousel-arrow-left {
   height: 40px;
   position: absolute;
   cursor: pointer;
-  /* opacity: 0.6; */
+  opacity: 0.6;
   z-index: 32;
   background-color: #1a1a1a;
   border: 1px solid #c4c4c4;
