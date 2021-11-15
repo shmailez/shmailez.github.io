@@ -30,7 +30,7 @@ h3{
     font-weight: 700;
     font-size: 40px;
     margin-top: 84px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     color: #1a1a1a;
 }
 
@@ -39,7 +39,7 @@ h4{
     font-family: 'Museo Sans Cyrl 700';
     font-weight: 700;
     font-size: 40px;
-    margin-top: 66px;
+    margin-top: 52px;
     margin-bottom: 20px;
     margin-left: -10px;
     color: #1a1a1a;
@@ -250,21 +250,27 @@ main .social-media ul li:nth-child(6)::before{
 } 
 
 .carousel {
+  
     width: 1200px;
     padding-top: 10px;
     border: 1px solid rgb(255, 255, 255);
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .carousel-hider {
     overflow: hidden;
     width: 1200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
 }
 
 .carousel-list{
     display: flex;
+    
 }
 
 .carousel-element{
@@ -363,6 +369,39 @@ h6{
     right: 0;
     margin-right: 18px;
 }
+
+/*arrows*/
+
+
+div.carousel-arrow-left {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  cursor: pointer;
+  /* opacity: 0.6; */
+  z-index: 32;
+  background-color: #1a1a1a;
+  border: 1px solid #c4c4c4;
+  border-radius: 50%;
+}
+
+div.carousel-arrow-left {
+  right: 0;
+  top: 38%;
+  display: block;
+  background: url(img/link-arrow.svg) no-repeat;
+  background-color: #ffffff;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
 
 /*media*/
 
