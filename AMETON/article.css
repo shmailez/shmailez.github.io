@@ -7,12 +7,12 @@ body{
     padding-right: 80px;
 }
 
-.header{
+header{
     display: flex;
     align-items: center;
 }
 
-.header a{
+header a{
     margin-left: 13px;
     margin-top: 6px;
 }
@@ -23,7 +23,7 @@ h5{
     font-weight: 900;
     margin-top: 22px;
     margin-left: 40px;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
 }
 
 h6{
@@ -32,7 +32,7 @@ h6{
     font-size: 13px;
     font-weight: 700;
     margin-left: 40px;
-    margin-top: 38px;
+    margin-top: 39px;
 }
 
 p{
@@ -45,10 +45,10 @@ p{
     line-height: 1.4;
 }
 
-.button-line{
+footer{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 18px;
+    margin-top: 17px;
     margin-left: 40px;
     margin-bottom: 40px;
 }
@@ -62,9 +62,9 @@ p{
     font-weight: 700;
     color: #ffffff;
     padding-top: 13px;
-    padding-left: 56px;
+    padding-left: 57px;
     padding-right: 57px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 
 span{
