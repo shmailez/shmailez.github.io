@@ -7,35 +7,46 @@
     <title>SegWayN</title>
 </head>
  <style>
-     svg{
+    *{
+       margin: 0;
+       padding: 0;
+    }
+
+    body{
+       background-color: rgb(0, 0, 0);
+    }
+     a{
+        position: absolute;
+     }
+     a{
          position: absolute;
          width: 250px;
          height: 100px;
-         top: 380px;
+         /* top: 380px;
+         left: 350px; */
+     }
+
+     a:nth-child(5){
+        top: 380px;
          left: 350px;
      }
 
-     /* svg:nth-child(1){
-        top: 10px;
-         left: 150px;
-     } */
-
-     svg:nth-child(2){
+      a:nth-child(1){
         top: 200px;
          left: 30px;
      }
 
-     svg:nth-child(3){
+     a:nth-child(2){
         top: 270px;
          left: 20px;
      }
 
-     svg:nth-child(4){
-        top: 300px;
-         left: 30px;
+     a:nth-child(3){
+        top: 325px;
+         left: 20px;
      }
 
-     svg:nth-child(5){
+     a:nth-child(4){
         top: 60px;
          left: 30px;
      }
@@ -47,43 +58,122 @@
          pointer-events: all;
          fill: red;
         }
+
+        svg:focus{
+         /* filter: invert(0.4); */
+         /* stroke: red; fill: red; */
+         filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg);
+         pointer-events: all;
+         filter: drop-shadow(0px 0px 10px red);
+        }
        
+        a:focus{
+         filter: invert(.5) sepia(1) saturate(5) hue-rotate(175deg) drop-shadow(0 0 15px rgb(94, 183, 255));
+         pointer-events: all;
+         outline: none;
+        }
+
       img{
         margin-left:100px;
       }  
+      
+      ul li{
+         list-style-type: none;
+      } 
+
+      a{
+         position: absolute;
+      }
+
+      button{
+         width: 50px;
+         height: 50px;
+         position: absolute;
+         border-radius: 50%;
+         border: none;
+         background-color: teal;
+         box-shadow: 0 0 10px 0px rgb(148, 148, 148);
+      }
+
+      button:focus{
+         box-shadow: 0 0 20px 0px rgb(106, 245, 255);
+         outline: none;
+      }
+
+      button span{
+         position: absolute;
+         top: calc(50% - 1px);
+         left: calc(50% - 14px);
+         border: 2px solid #000;
+         width: 24px;
+         background-color:#000;
+         box-shadow: 0 0 10px 0px rgb(202, 230, 196);
+      }
+
+      button span:before{
+         content: '';
+         position: absolute;
+         top: -2px;
+         left: -2px;
+         border: 2px solid #000;
+         width: 24px;
+         background-color:#000;
+         box-shadow: 0 0 10px 0px rgb(202, 230, 196);
+      }
+
+      button span:hover::before{
+         /* position: absolute;
+         top: -2px;
+         left: -2px;
+         border: 2px solid #000; */
+         transform: rotate(90deg);
+      } 
+
+
  </style>
 <body>
+   <a href="#"><svg xmlns="#www.w3.org/2000/svg">
+      <!-- <filter id="shadow2">
+         <!-- <feDropShadow dx="0" dy="0" stdDeviation="5"
+             flood-color="red"/> -->
+             <!-- <feDropShadow dx="0" dy="0.2" stdDeviation="2" flood-color="black"/>
+       </filter> --> 
+      <polyline points="25,20 60, 30 80, 30 160, 30 195, 20 200"
+           style="fill: none;stroke:gray;stroke-width:1" />
+        <text x="0" y="18" fill="gray" font-size="16" font-weight="400" font-family="Arial, Helvetica, sans-serif">Палка</text>
+        <circle cx="194" cy="20" r="5"fill="white" stroke="gray" />
+   </svg></a>
+   <a href="#"><svg xmlns="#www.w3.org/2000/svg">
+      <polyline points="20,40 20, 40 140, 20 160, 20 220, 20 240"
+           style="fill: none;stroke:gray;stroke-width:1" />
+        <text x="0" y="52" fill="gray" font-size="16" font-weight="400" font-family="Arial, Helvetica, sans-serif">Стойка</text>
+        <circle cx="220" cy="20" r="5"fill="white" stroke="gray"/>
+   </svg></a>
+   <a href="#"><svg xmlns="#www.w3.org/2000/svg">
+      <polyline points="40,70 70, 50 120, 20 160, 20 195, 20 200"
+           style="fill: none;stroke:gray;stroke-width:1" />
+        <text x="5" y="82" fill="gray" font-size="16" font-weight="400" font-family="Arial, Helvetica, sans-serif">Колесо</text>
+        <circle cx="194" cy="20" r="5"fill="white" stroke="gray"/>
+   </svg></a>
+   <a href="#"><svg xmlns="#www.w3.org/2000/svg">
+      <polyline points="40,40 40, 40 140, 20 160, 20 150, 20 150"
+           style="fill: none;stroke:gray;stroke-width:1" />
+        <text x="10" y="52" fill="gray" font-size="16" font-weight="400" font-family="Arial, Helvetica, sans-serif">Тормоз</text>
+        <circle cx="158" cy="20" r="5"fill="white" stroke="gray"/>
+   </svg></a>
+   <a href="#"><svg xmlns="#www.w3.org/2000/svg">
+      <polyline points="6,6 30, 30 50, 50 160, 50 150, 50 150"
+           style="fill: none;stroke:gray;stroke-width:1" />
+        <text x="165" y="55" fill="gray" font-size="16" font-weight="400" font-family="Arial, Helvetica, sans-serif">Ножка</text>
+        <circle cx="6" cy="6" r="5"fill="white" stroke="gray"/>
+   </svg></a>
+   
     <img src="img/kickscooter.png" alt="skooter" width="400px" height="auto">
-    <svg xmlns="http://www.w3.org/2000/svg">
-        <polyline points="25,20 60, 30 80, 30 160, 30 195, 20 200"
-             style="fill: none;stroke:gray;stroke-width:1" />
-          <text x="0" y="18" fill="gray" font-size="14" font-weight="600" font-family="Arial, Helvetica, sans-serif">Палка</text>
-          <circle cx="194" cy="20" r="5"fill="white" stroke="gray"/>
-     </svg>
-     <svg xmlns="http://www.w3.org/2000/svg">
-        <polyline points="20,40 20, 40 140, 20 160, 20 220, 20 240"
-             style="fill: none;stroke:gray;stroke-width:1" />
-          <text x="0" y="52" fill="gray" font-size="14" font-weight="600" font-family="Arial, Helvetica, sans-serif">Стойка</text>
-          <circle cx="220" cy="20" r="5"fill="white" stroke="gray"/>
-     </svg>
-     <svg xmlns="http://www.w3.org/2000/svg">
-        <polyline points="40,70 70, 50 120, 20 160, 20 195, 20 200"
-             style="fill: none;stroke:gray;stroke-width:1" />
-          <text x="5" y="82" fill="gray" font-size="14" font-weight="600" font-family="Arial, Helvetica, sans-serif">Колесо</text>
-          <circle cx="194" cy="20" r="5"fill="white" stroke="gray"/>
-     </svg>
-     <svg xmlns="http://www.w3.org/2000/svg">
-        <polyline points="40,40 40, 40 140, 20 160, 20 150, 20 150"
-             style="fill: none;stroke:gray;stroke-width:1" />
-          <text x="10" y="52" fill="gray" font-size="14" font-weight="600" font-family="Arial, Helvetica, sans-serif">Тормоз</text>
-          <circle cx="158" cy="20" r="5"fill="white" stroke="gray"/>
-     </svg>
-     <svg xmlns="http://www.w3.org/2000/svg">
-        <polyline points="6,6 30, 30 50, 50 160, 50 150, 50 150"
-             style="fill: none;stroke:gray;stroke-width:1" />
-          <text x="165" y="55" fill="gray" font-size="14" font-weight="600" font-family="Arial, Helvetica, sans-serif">Ножка</text>
-          <circle cx="6" cy="6" r="5"fill="white" stroke="gray"/>
-     </svg>
+    
+     
+     <button><span class="button-span"></span></button>
+     
+     
      
 </body>
 </html>
