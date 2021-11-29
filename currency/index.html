@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currency converter</title>
+</head>
+<style>
+    .container{
+        width: 200px;
+        
+        display: flex;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <input type="number" id="number">
+        <select name="currency" class="currency" onchange="updatevalue()"></select>
+    
+            
+        </select>
+    </div>
+    <div class="container">
+        <input type="text" id="output">
+        <select name="currency" class="currency" onchange="updatevalue()"></select>
+    </div>
+    <script>
+        const select = document.querySelectorAll('.currency');
+        const number = document.getElementById("number");
+        const output = document.getElementById("output");
+
+        fetch(`https://api.frankfurter.app/currencies`).then((data) => data.json())
+            .then((data) => {
+                display(data);
+            });
+
+            function display(data){
+                const entries = Object.entries(data);
+                for (let i = 0; i < entries.length; i++) {
+                    select[0].innerHTML += `<option value="${entries[i][0]}">${entries[i][0]} : ${entries[i][1]}</option>`;
+                    select[1].innerHTML += `<option value="${entries[i][0]}">${entries[i][0]} : ${entries[i][1]}</option>`;
+                    
+                }
+            }
+
+
+            function updatevalue() {
+                let currency1 = select[0].value;
+                let currency2 = select[1].value;
+
+                let value = number.value;
+
+                if(currency1 != currency2) {
+                    convert(currency1, currency2, value);
+                } else {
+                    alert("Chooose Different Currency");
+                }
+            }
+
+
+            function convert(currency1, currency2, value) {
+                const host = "api.frankfurter.app"; 
+
+                fetch(`https://${host}/latest?amont=${value}&from=${currency1}&to${currency2}`)
+                .then((val) => val.json())
+                .then((val) => {
+                    console.log(Object.values(val.rates)[0]);
+                    output.value = Object.values(val.rates)[0];
+                })
+            
+            }
+    </script>
+</body>
+</html>
