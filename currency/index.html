@@ -16,28 +16,32 @@
         height: 25px;
         border-radius: 10px;
         margin-right: 5px;
+        padding-left: 7px;
         background-color: rgb(2, 73, 95);
         color: #fff;
         border: none;
     }
 
     select{
+        width: 120px;
         height: 25px;
         margin-bottom: 20px;
+        padding-left: 7px;
         border-radius: 10px;
         background-color: chocolate;
         color: #fff;
+    }
+
+    .container{
+        margin-top: 40px;
+        margin-left: 20px;
     }
 </style>
 <body>
     <div class="container">
         <input type="number" id="number">
         <select name="currency" class="currency" onchange="updatevalue()"></select>
-    
-            
-        </select>
-    </div>
-    <div class="container">
+        <br>
         <input type="text" id="output">
         <select name="currency" class="currency" onchange="updatevalue()"></select>
     </div>
