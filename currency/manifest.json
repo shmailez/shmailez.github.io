@@ -2,7 +2,7 @@
     "name": "converter",
     "short_name": "converter",
     "lang": "en-EN",
-    "start_url": "/",
+    "start_url": "/currency/",
     "display": "standalone",
     "theme_color" : "#ffffff",
     "background_color" : "#ffffff",
