@@ -7,24 +7,39 @@
     <title>currency converter</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
     body{
         background-color: rgb(125, 187, 146);
     }
 
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(64, 64, 64);
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
     input{
-        width: 100px;
-        height: 25px;
+        width: 150px;
+        height: 30px;
         border-radius: 10px;
-        margin-right: 5px;
-        padding-left: 7px;
+        padding: 0;
+        text-align: center;
+        /* margin-right: 5px; */
+        /* padding-left: 7px; */
         background-color: rgb(2, 73, 95);
         color: #fff;
         border: none;
     }
 
     select{
-        width: 120px;
-        height: 25px;
+        width: 150px;
+        height: 30px;
         margin-bottom: 20px;
         padding-left: 7px;
         border-radius: 10px;
@@ -33,17 +48,32 @@
     }
 
     .container{
-        margin-top: 40px;
-        margin-left: 20px;
+        /* margin-top: 40px;
+        margin-left: 20px; */
+        margin: auto;
+        /* margin-top: 50px; */
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+
+    input:first-child{
+        background-color: blueviolet;
+        /* visibility: hidden; */
+        display: none;
     }
 </style>
 <body>
+    <h1>Simple currency converter</h1>
     <div class="container">
         <input type="number" id="number">
         <select name="currency" class="currency" onchange="updatevalue()"></select>
         <br>
-        <input type="text" id="output">
         <select name="currency" class="currency" onchange="updatevalue()"></select>
+        <br>
+        <input type="text" id="output">
+        
+        
     </div>
     <script>
         const select = document.querySelectorAll('.currency');
