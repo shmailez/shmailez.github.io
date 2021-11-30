@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
     }
+
     body{
         background-color: rgb(125, 187, 146);
     }
@@ -30,8 +31,6 @@
         border-radius: 10px;
         padding: 0;
         text-align: center;
-        /* margin-right: 5px; */
-        /* padding-left: 7px; */
         background-color: rgb(2, 73, 95);
         color: #fff;
         border: none;
@@ -45,23 +44,20 @@
         border-radius: 10px;
         background-color: chocolate;
         color: #fff;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .container{
-        /* margin-top: 40px;
-        margin-left: 20px; */
-        margin: auto;
-        /* margin-top: 50px; */
         width: 200px;
         height: 200px;
+        margin: auto;
         text-align: center;
     }
 
     input:first-child{
-        background-color: blueviolet;
-        /* visibility: hidden; */
         display: none;
     }
+
 </style>
 <body>
     <h1>Simple currency converter</h1>
@@ -72,10 +68,9 @@
         <select name="currency" class="currency" onchange="updatevalue()"></select>
         <br>
         <input type="text" id="output">
-        
-        
     </div>
     <script>
+
         const select = document.querySelectorAll('.currency');
         const number = document.getElementById("number");
         const output = document.getElementById("output");
@@ -118,8 +113,8 @@
                     console.log(Object.values(val.rates)[0]);
                     output.value = Object.values(val.rates)[0];
                 })
-            
             }
+
     </script>
 </body>
 </html>
