@@ -4,8 +4,8 @@
     "lang": "en-EN",
     "start_url": "/currency/",
     "display": "standalone",
-    "theme_color" : "#dd6300",
-    "background_color" : "#dd6300",
+    "theme_color" : "#ff9742",
+    "background_color" : "#ff9742",
     "icons": [
       {
         "src": "apple-icon.png",
