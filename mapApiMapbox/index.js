@@ -2,16 +2,16 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicGFycWluYSIsImEiOiJja3d6ZTlxM3IwaHJvMnBsNHNpb
 const map = new mapboxgl.Map({
 container: 'map', // container ID
 style: 'mapbox://styles/mapbox/streets-v11', // style URL
-center: [76.9673, 52.2515], // starting position [lng, lat]
+center: [76.9673, 52.2515], // starting position [lng, lat] [76.96982, 52.24913], ////default [76.9673, 52.2515]
 zoom: 15 // starting zoom
 });
 
 const marker1 = new mapboxgl.Marker() ///add geoMarcker
-.setLngLat([76.96995, 52.24911])
+.setLngLat([76.97005, 52.24925])
 .addTo(map);
 
 const marker2 = new mapboxgl.Marker({color: 'red'}) ///add geoMarcker
-.setLngLat([76.9645, 52.2538])
+.setLngLat([76.96465, 52.25382])
 .addTo(map);
 
 
@@ -27,16 +27,21 @@ map.on('load', () => {
             'geometry': {
                 'type': 'LineString',
                 'coordinates': [
-
-                    [76.96995, 52.24911],
-                    [76.9693, 52.24962],
-                    [76.9689, 52.24945],
+                    [76.97005, 52.24925],
+                    [76.96993, 52.24925],
+                    [76.96982, 52.24919],
+                    [76.96923, 52.24960],
+                    [76.96897, 52.24946],
                     [76.9681, 52.25],
                     [76.9673, 52.2505],
-                    [76.9662, 52.2513],
-                    [76.9659, 52.2535],
+                    [76.96628, 52.25125],
+                    [76.96615, 52.2515],
+                    [76.9660, 52.2527],
+                    [76.9657, 52.2528],
+                    [76.9657, 52.2535],
                     [76.9645, 52.2535],
                     [76.9645, 52.2538],
+                    [76.96465, 52.25382],
                 ]
             }
         }
