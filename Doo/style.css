@@ -163,6 +163,11 @@ nav a:hover{
     justify-content: center;
 }
 
+.background-box img{
+    width: 100%;
+    max-width: 400px;
+}
+
 footer{
     border-top: 1px solid #cfcfcf;
     max-width: 1000px;
@@ -192,4 +197,39 @@ footer ul li ul li{
     margin-bottom: 20px;
     color: #6e6d7a;
     font-size: 12px;
+}
+
+@media screen and (max-width: 700px){
+    nav ul{
+        
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        margin-top: -50px;
+        padding-top: 50px;
+        z-index: 1;
+        background-color: #cfcfcf;
+        opacity: 0.96;
+    }
+    nav ul li{
+        margin-bottom: 30px;
+    }
+
+    /* .nav--hidden{
+        visibility: hidden;
+    } */
+}
+
+@media screen and (max-width: 360px){
+    nav ul{
+        width: 100%;
+        align-items: center;
+    }
+
+    nav ul li{
+        /* margin-right: 40px; */
+        margin-left: 0;
+    }
 }
