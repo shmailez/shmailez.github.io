@@ -205,7 +205,21 @@ footer ul li ul li{
     font-size: 12px;
 }
 
+@media screen and (max-width: 1050px){
+    nav img{
+        margin-left: 40px;
+    }
+
+    nav li:last-child a{
+        margin-right: 40px;
+    }
+}
+
 @media screen and (max-width: 700px){
+    nav li:last-child a{
+        margin-right: 0px;
+    }
+
     nav ul{
         
         flex-direction: column;
@@ -232,8 +246,8 @@ footer ul li ul li{
         position: absolute;
         width: 20px;
         height: 20px;
-        top: 40px;
-        right: 40px;
+        top: 35px;
+        right: 55px;
         z-index: 10;
         border: none;
         background-color: transparent;
