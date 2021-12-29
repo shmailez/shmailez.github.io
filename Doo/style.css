@@ -224,7 +224,13 @@ footer ul li ul li{
     }
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
+
+    .background-box img{
+        width: 70%;
+        max-width: 300px;
+    }
+
     nav li:last-child a{
         margin-right: 0px;
     }
