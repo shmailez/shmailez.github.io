@@ -248,8 +248,7 @@ footer ul li ul li{
         margin-top: -50px;
         padding-top: 50px;
         z-index: 1;
-        background-color: #cfcfcf;
-        opacity: 0.96;
+        background: linear-gradient(180deg, rgba(207,207,207,1) 40%, rgba(255,255,255,0) 60%);
     }
     nav ul li{
         margin-bottom: 30px;
