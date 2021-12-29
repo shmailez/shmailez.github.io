@@ -6,6 +6,12 @@
     list-style-type: none;
 }
 
+
+
+.btn{
+    display: none;
+}
+
 h1, h2, h6{
     text-align: center;
 }
@@ -217,9 +223,21 @@ footer ul li ul li{
         margin-bottom: 30px;
     }
 
-    /* .nav--hidden{
+    .invis{
         visibility: hidden;
-    } */
+    }
+
+    .btn{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 40px;
+        right: 40px;
+        z-index: 10;
+        border: none;
+        background-color: transparent;
+    }
 }
 
 @media screen and (max-width: 360px){
