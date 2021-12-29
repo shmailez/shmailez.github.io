@@ -186,6 +186,7 @@ footer{
 
 footer ul{
     display: flex;
+    flex-wrap: wrap;
     max-width: 1000px;
     width: 100%;
     margin-left: auto;
@@ -193,14 +194,22 @@ footer ul{
     justify-content: space-around;
 }
 
+footer ul img{
+    margin: 20px;
+    margin-bottom: -20px;
+}
+
 footer ul li ul{
     display: flex;
     flex-direction: column;
     font-size: 14px;
+    /* background-color: tomato; */
+    margin-top: 30px;
 }
 
 footer ul li ul li{
     margin-bottom: 20px;
+    margin-left: 20px;
     color: #6e6d7a;
     font-size: 12px;
 }
@@ -251,6 +260,12 @@ footer ul li ul li{
         z-index: 10;
         border: none;
         background-color: transparent;
+    }
+
+    footer ul li{
+        width: 50%;
+        /* background-color: tomato; */
+        margin: 0;
     }
 }
 
