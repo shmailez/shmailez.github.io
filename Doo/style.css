@@ -6,7 +6,29 @@
     list-style-type: none;
 }
 
+.box{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+    height: 600px;
+    background-color: aquamarine;
+}
 
+.box img{
+    position: absolute;
+    width: 255px;
+    height: 525px;
+    margin-top: 40px;
+}
+
+.box video{
+    width: 230px;
+    /* margin-top: 15px; */
+    /* margin-left: 10px; */
+}
 
 .btn{
     display: none;
@@ -248,7 +270,7 @@ footer ul li ul li{
         margin-top: -50px;
         padding-top: 50px;
         z-index: 1;
-        background: linear-gradient(180deg, rgba(207,207,207,1) 40%, rgba(255,255,255,0) 60%);
+        background: linear-gradient(210deg, rgba(0, 0, 0, 0.863) 40%, rgba(255,255,255,0) 90%);
     }
     nav ul li{
         margin-bottom: 30px;
