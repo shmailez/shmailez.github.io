@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<style>
+    body{
+        background-color: rgb(221, 221, 221);
+    }
+
+    h1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #2c2c2c;
+    }
+
+    h1:hover{
+        color: rgb(39, 95, 95);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 50px;
+    }
+
+    .invisible{
+        visibility: hidden;
+    }
+    
+    .delete{
+        display: none;
+    }
+</style>
+<body>
+    <h1 class="words">Anton Mamontov<br>Junior Frontend Developer</h1>
+    <script>
+        let word = document.querySelector('.words')
+        word.onclick = function(){
+            word.classList.toggle('invisible')
+        }
+
+        document.body.onkeyup = function(e){
+            if(e.keyCode == 32){
+                word.classList.toggle('delete')
+            }
+        }
+    </script>
+</body>
+</html>
