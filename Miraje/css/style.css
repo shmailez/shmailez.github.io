@@ -316,6 +316,10 @@ footer ul li{
         margin-left: 0;
     }
     
+    .container img{
+        margin-top: 30px;
+    }
+    
     .container{
         width: 100%;
         margin-left: 20px;
