@@ -182,6 +182,7 @@ header nav{
     margin-top: 15%;
     font-size: 28px;
     font-weight: 400;
+    margin-left: 20px;
 }
 
 .container h2{
@@ -190,6 +191,7 @@ header nav{
     font-weight: 700;
     color: #56597a;
     margin-top: 1%;
+    margin-left: 20px;
 }
 
 .container p{
@@ -198,11 +200,13 @@ header nav{
     margin-top: 1%;
     font-size: 20px;
     font-weight: 400;
+    margin-left: 20px;
 }
 
 .sector img{
     width: 80%;
     height: 100%;
+    margin-left: 20px;
 }
 
 header .logo{
@@ -308,9 +312,10 @@ footer ul li{
 } 
 
 @media screen and (max-width:666px) {
-    /* .string{
-        flex-direction: column;
-    } */
+    .container h3, .container h2, .container p{
+        margin-left: 0;
+    }
+    
     .container{
         width: 100%;
         margin-left: 20px;
@@ -321,10 +326,15 @@ footer ul li{
         width: 100%;
         text-align: center;
         margin-left: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     header nav{
         width: 100%;
+        margin-right: 0;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     
     header nav ul{
