@@ -407,7 +407,7 @@ main{
   
   /* General styles */
   .ant-carousel {
-      max-width: 1000px;
+    max-width: 1000px;
     width: 100%;
     padding-top: 10px;
     border: 1px solid rgb(255, 255, 255);
@@ -416,11 +416,13 @@ main{
   
   .ant-carousel-hider {
     overflow: hidden;
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
   }
   
   .ant-carousel-list {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -448,7 +450,8 @@ main{
 
 .wrapper-carusiele{
     display: flex;
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -467,7 +470,8 @@ main{
       }
       .wrapper{
         display: flex;
-        width: 980px;
+        max-width: 980px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -542,11 +546,19 @@ main{
     }
     .ant-carousel-hider {
         overflow: hidden;
-        width: 750px;
+        width: 100%;
+        max-width: 750px;
       }
+
+
+    .ant-carousel-list{
+        width: 100%;
+        max-width: 640px;
+    }
     .wrapper-carusiele{
         display: flex;
-        width: 750px;
+        width: 100%;
+        max-width: 750px;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -589,21 +601,29 @@ main{
 
     .wrapper{
         display: flex;
-        width: 580px;
+        width: 100%;
+        max-width: 580px;
         margin-left: auto;
         margin-right: auto;
     }
     .ant-carousel-hider {
         overflow: hidden;
-        width: 640px;
+        width: 100%;
+        max-width: 640px;
       }
     .wrapper-carusiele{
         display: flex;
-        width: 640px;
+        width: 100%;
+        max-width: 640px;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
       } 
+
+    .ant-carousel-list{
+        width: 100%;
+        max-width: 640px;
+    }
    
     .ant-carousel-element {
         display: flex;
