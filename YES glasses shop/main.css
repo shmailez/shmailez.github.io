@@ -750,6 +750,9 @@ main{
             width: 290px;
             margin: 5px;
           }
+         main{
+             margin-bottom: 0;
+         }
     }
 
 
