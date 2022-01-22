@@ -12,7 +12,7 @@ html {
 
 
 .hr{
-    width: 100%;
+    width: calc(100% - 2px);
     border: 1px solid #000;
 }
 header{
@@ -46,6 +46,8 @@ header{
 }
 .nav-sun{
     border-left: 2px solid #000;
+    width: calc(100%-2px);
+    
 }
 ul{
     display: flex;
@@ -57,19 +59,20 @@ li{
     display: flex;
     list-style-type: none;
     border-left: 1px solid #000;
-    border-right:  1px solid #000;;
-    width: 100%;
+    /* border-right:  1px solid #000; */
+    width: calc(100% - 2px);
     justify-content: center;
     align-items: center;
 }
 .nav-customer{
     display: flex;
-    width: 29%;
+    width: calc(29% - 2px);
     align-items: center;
     justify-content: flex-end;
     text-decoration: none;
     color: #000;
     border-left:  1px solid #000;
+    border-right:  1px solid #000 ;
 }
 main{
     display: flex;
