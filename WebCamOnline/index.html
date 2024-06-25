@@ -15,6 +15,13 @@
     <button onclick="start(false)">stop</button>
  </div>
 
+ <video id="second" autoplay></video>
+
+ <div style="display: flex; justify-content: center;">
+    <button onclick="starter(true)">start</button>
+    <button onclick="starter(false)">stop</button>
+ </div>
+
 
 <script>
 const start = async function(toggle) {
@@ -34,6 +41,18 @@ const start = async function(toggle) {
     const photoCapabilities = await imageCapture.getPhotoCapabilities()
     console.log('Photo capabilities', photoCapabilities)
     
+}
+
+const starter = async function(toggle) {
+
+const accept = {video: toggle, audio: true}
+const local = await navigator.mediaDevices.getUserMedia(accept)
+
+const video = document.getElementById('second')
+video.srcObject = local
+
+
+
 }
 </script>
 </body>
