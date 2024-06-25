@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebApiExampless</title>
+</head>
+<body style="display: flex; flex-direction: column; justify-content: center;">
+   
+
+<video autoplay></video>
+
+ <div style="display: flex; justify-content: center;">
+    <button onclick="start(true)">start</button>
+    <button onclick="start(false)">stop</button>
+ </div>
+
+
+<script>
+const start = async function(toggle) {
+
+    const accept = {video: toggle, audio: true}
+    const local = await navigator.mediaDevices.getUserMedia(accept)
+
+    const video = document.querySelector('video')
+    video.srcObject = local
+
+    const  videoTrack = local.getVideoTracks()[0]
+    console.log(videoTrack)
+    
+    const imageCapture = new ImageCapture(videoTrack)
+    console.log(imageCapture)
+
+    const photoCapabilities = await imageCapture.getPhotoCapabilities()
+    console.log('Photo capabilities', photoCapabilities)
+    
+}
+</script>
+</body>
+</html>
